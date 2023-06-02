@@ -1,0 +1,139 @@
+@media only screen and (min-width: 501px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 25px;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .content .information{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 2.5%;
+
+        width: 62%;
+        height: auto;
+    }
+
+    .information .title{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+
+        color: #285FA0;
+
+    }
+    .information .text-content{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #021A36;
+    }
+
+
+    .content .button-catalog {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        width: 25%;
+        height: auto;
+
+        background: #8FB1DA;
+        border-radius: 15px;
+    }
+
+    .content .button-catalog p{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #021A36; 
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+ 
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 10px;
+        gap: 20px;
+        
+        width: 100%;
+        height: auto;
+    }
+
+    .content .information{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+        
+        width: 100%;
+        height: auto;
+    }
+
+    .information .title{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #285FA0;
+
+    }
+    .information .text-content{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+
+        color: #021A36;
+    }
+
+
+    .content .button-catalog {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        width: 76.7%;
+        height: 6.8%;
+        
+
+        background: #8FB1DA;
+        border-radius: 15px;
+    }
+
+    .content .button-catalog p{
+        font-family: 'Prosto One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        color: #021A36;
+    }
+}
+
