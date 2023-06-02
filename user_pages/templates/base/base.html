@@ -1,0 +1,76 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'user_pages/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'catalog/css/main.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <a href="{% url 'main' %}"><img class="logo" src="{% static 'user_pages/img/logo.png' %}" alt=""></a>
+        <div class="links">
+            <div>
+                <div class="about-us">
+                    <a href="{% url 'about_us' %}"><img src="{% static 'user_pages/img/about_us_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'about_us' %}">Info</a>
+                </div>
+                <div class="feedback">
+                    <a href="#"><img src="{% static 'user_pages/img/feedback_icon.png' %}" alt=""></a>
+                    <a class="text" href="#">Feedback</a>
+                </div>
+            </div>
+            <div>
+                
+                <div class="cart">
+                    <a href="{% url 'cart' %}"><img src="{% static 'user_pages/img/cart_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'cart' %}">Cart</a>
+                </div>
+                <div class="catalog"> 
+                    <a href="{% url 'catalog' %}"><img src="{% static 'user_pages/img/catalog_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'catalog' %}">Catalog</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div class="contact">
+            <a href="{% url 'main' %}"><img class="logo" src="{% static 'user_pages/img/logo.png' %}" alt=""></a>
+            <p>Номер телефону: +380 39 716 9313</p>
+            <p>Електронна адресса: webshop@gmail.com</p>
+        </div>
+        <div class="links">
+            <div>
+                <div class="about-us">
+                    <a href="{% url 'about_us' %}"><img src="{% static 'user_pages/img/about_us_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'about_us' %}">Info</a>
+                </div>
+                <div class="feedback">
+                    <a href="#"><img src="{% static 'user_pages/img/feedback_icon.png' %}" alt=""></a>
+                    <a class="text" href="#">Feedback</a>
+                </div>
+            </div>
+            <div>
+                <div class="cart">
+                    <a href="{% url 'cart' %}"><img src="{% static 'user_pages/img/cart_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'cart' %}">Cart</a>
+                </div>
+                <div class="catalog">
+                    <a href="{% url 'catalog' %}"><img src="{% static 'user_pages/img/catalog_icon.png' %}" alt=""></a>
+                    <a class="text" href="{% url 'catalog' %}">Catalog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src = '{% static "user_pages/js/change_price.js" %}' defer></script>
+
+</body>
+</html>

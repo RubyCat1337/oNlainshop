@@ -1,0 +1,142 @@
+@media only screen and (min-width: 501px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 25px;
+
+        width: 100%;
+        height: auto;
+    }
+}
+
+.catalogg{
+    float: left;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 35;
+    
+}
+
+.catalogg img{
+    width: 200px;
+    height: 100px;
+}
+
+p{
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+#text{
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size: 14px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.catalogg a{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ggfgfg{
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.productt {
+    width: 45%;
+
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5%;
+  }
+  
+  .productt h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .productt h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .productt img {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .productt p {
+    margin-bottom: 10px;
+  }
+  
+  .productt #priceProduct {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .productt h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .productt .check {
+    margin-right: 5px;
+  }
+  
+  .productt button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .productt button:hover {
+    background-color: #45a049;
+  }
+  
+  .check {
+    margin-right: 5px;
+  }
+  
+  
+.check:checked {
+    background-color: #3366FF; 
+    color: white; 
+  }
